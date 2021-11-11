@@ -3,18 +3,24 @@ package main.java.animals;
 import main.java.food.Food;
 
 public abstract class Animal {
-    boolean vegetarian;
-    String speak;
-    byte paw;
+    abstract void eat(Food food);
+    private String speak;
 
-    public Animal(boolean veg, String speak, byte paw) {
-        this.vegetarian = veg;
+    public String getSpeak() {
+        return speak;
+    }
+
+    public void setSpeak(String speak) {
         this.speak = speak;
-        this.paw = paw;
+    }
+
+    public Animal(String speak) {
+        this.speak = speak;
     }
 
     interface Run{
         void run();
+
 
     }
     interface Swim{
@@ -26,8 +32,9 @@ public abstract class Animal {
 
     }
     interface Voice{
-        void voice();
+        String voice();
 
     }
+
 }
 

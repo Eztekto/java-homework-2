@@ -1,4 +1,7 @@
 package main.java.animals;
 
-public class Herbivore {
+public abstract class Herbivore extends Animal{
+    public Herbivore(String speak) {
+        super(speak);
+    }
 }

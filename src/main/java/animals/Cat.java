@@ -1,12 +1,16 @@
 package main.java.animals;
 
-public class Cat extends Animal {
-    String color;
-    String breed;
+import main.java.food.Food;
 
-    public Cat(String color, String breed) {
-        super(false, "Meow", (byte) 4);
-        this.color = color;
-        this.breed = breed;
+public class Cat extends Animal {
+
+    @Override
+    void eat(Food food) {
+
+    }
+
+    public Cat(String speak) {
+        super("Meow");
+
     }
 }

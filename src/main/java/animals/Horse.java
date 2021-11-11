@@ -1,16 +1,38 @@
 package main.java.animals;
 
-public class Horse extends Animal {
-    String breed;
-    String color;
+import main.java.food.Food;
+import main.java.food.Grass;
+import main.java.food.Meat;
 
-    public Horse(boolean veg, String speak, byte paw, String breed, String color) {
-        super(veg, speak, paw);
-        this.breed = breed;
-        this.color = color;
+public class Horse extends Herbivore implements Animal.Run, Animal.Voice {
+    String speak;
+
+
+
+    public Horse(String speak) {
+        super(speak);
+        this.speak = speak;
     }
+
+    @Override
+    public void eat(Food food) {
+        if (food instanceof Meat){
+            System.out.println("Я не ем мясо");
+        }
+        if (food instanceof Grass){
+            System.out.println("Люблю траву!");
+        }
+
+    }
+    @Override
     public void run() {
-        System.out.println(speak + ", я поскакал");
+        System.out.println("Я поскакал");
+
     }
 
+    @Override
+    public String voice() {
+        System.out.println(speak);
+        return speak;
+    }
 }
