@@ -3,35 +3,16 @@ package main.java.animals;
 import main.java.food.Food;
 
 
-interface Voice{
-    String voice();
-}
-
-
-interface Run{
-    void run();
-}
-
-
-interface Swim{
-    void swim();
-
-}
-
-
-interface Fly{
-    void fly();
-
-}
-
-
-public abstract class Animal implements Voice{
-
-    abstract void eat(Food food);
-
-
+public abstract class Animal {
     private String name;
     private String speak;
+
+    public Animal(String name, String speak) {
+        this.name = name;
+        this.speak = speak;
+    }
+
+    public abstract void eat(Food food);
 
     public String getName() {
         return name;
@@ -49,9 +30,6 @@ public abstract class Animal implements Voice{
         this.speak = speak;
     }
 
-    public Animal(String name, String speak) {
-        this.name = name;
-        this.speak = speak;
-    }
+
 }
 
