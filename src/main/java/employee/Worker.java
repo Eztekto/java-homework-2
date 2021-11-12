@@ -29,6 +29,9 @@ public class Worker {
     public void getVoice(Duck duck){
         duck.voice();
     }
+//    public void getVoice(Fish fish){
+//        fish.voice();
+//    }
 
 
 }

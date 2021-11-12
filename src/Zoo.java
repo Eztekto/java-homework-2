@@ -11,11 +11,17 @@ public class Zoo {
         Cow cow = new Cow("Корова","Му");
         Meat meat = new Meat("Мясо");
         Grass grass = new Grass("Трава");
+        Duck duck = new Duck("Утка", "Кря");
+        Fish fish = new Fish("Рыба","Буль");
         Worker worker = new Worker();
+//        worker.getVoice(fish);
+        worker.getVoice(duck);
         worker.getVoice(cat);
         worker.getVoice(horse);
         worker.getVoice(lion);
         worker.getVoice(cow);
+        worker.feed(meat, fish);
+        worker.feed(grass, fish);
         worker.feed(meat, horse);
         worker.feed(grass, horse);
         worker.feed(meat, cat);
