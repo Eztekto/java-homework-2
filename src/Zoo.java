@@ -14,12 +14,12 @@ public class Zoo {
         Duck duck = new Duck("Утка", "Кря");
         Fish fish = new Fish("Рыба","Буль");
         Worker worker = new Worker();
-//        worker.getVoice(fish);
         worker.getVoice(duck);
         worker.getVoice(cat);
         worker.getVoice(horse);
         worker.getVoice(lion);
         worker.getVoice(cow);
+        worker.getVoice(duck);
         worker.feed(meat, fish);
         worker.feed(grass, fish);
         worker.feed(meat, horse);
