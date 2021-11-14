@@ -8,7 +8,7 @@ public class Lion extends Carnivorous implements Voice, Run {
     private String speak;
 
     public Lion(String name, String speak) {
-        super(name, speak);
+        super(name);
         this.speak = speak;
         this.name = name;
 

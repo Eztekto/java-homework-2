@@ -12,7 +12,7 @@ public class Zoo {
         Meat meat = new Meat("Мясо");
         Grass grass = new Grass("Трава");
         Duck duck = new Duck("Утка", "Кря");
-        Fish fish = new Fish("Рыба","Буль");
+        Fish fish = new Fish("Рыба");
         Worker worker = new Worker();
         worker.getVoice(duck);
         worker.getVoice(cat);
@@ -30,9 +30,9 @@ public class Zoo {
     }
     private static void createPond() {
         Fish[] fish = new Fish[3];
-        fish[0] = new Fish("Пиранья", "Буль");
-        fish[1] = new Fish("Акула", "Буль");
-        fish[2] = new Fish("Удильщик", "Буль");
+        fish[0] = new Fish("Пиранья");
+        fish[1] = new Fish("Акула");
+        fish[2] = new Fish("Удильщик");
         Duck[] duck = new Duck[3];
         duck[0] = new Duck("Аист", "Кря");
         duck[1] = new Duck("Лебедь", "Гра");
