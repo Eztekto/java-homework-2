@@ -5,11 +5,9 @@ import main.java.actions.Swim;
 
 public class Fish extends Carnivorous implements Swim {
     private String name;
-    private String speak;
 
-    public Fish(String name, String speak) {
-        super(name, speak);
-        this.speak = speak;
+    public Fish(String name) {
+        super(name);
         this.name = name;
     }
 

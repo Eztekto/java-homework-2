@@ -6,11 +6,10 @@ import main.java.food.Meat;
 
 public abstract class Carnivorous extends Animal {
     private String name;
-    private String speak;
 
-    public Carnivorous(String name, String speak) {
-        super(name, speak);
-        this.speak = speak;
+
+    public Carnivorous(String name) {
+        super(name);
         this.name = name;
     }
     @Override

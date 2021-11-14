@@ -5,11 +5,9 @@ import main.java.food.Food;
 
 public abstract class Animal {
     private String name;
-    private String speak;
 
-    public Animal(String name, String speak) {
+    public Animal(String name) {
         this.name = name;
-        this.speak = speak;
     }
 
     public abstract void eat(Food food);
@@ -22,13 +20,6 @@ public abstract class Animal {
         this.name = name;
     }
 
-    public String getSpeak() {
-        return speak;
-    }
-
-    public void setSpeak(String speak) {
-        this.speak = speak;
-    }
 
 
 }
