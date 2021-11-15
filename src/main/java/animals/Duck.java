@@ -10,8 +10,8 @@ public class Duck extends Herbivore implements Swim, Fly, Voice {
     private String name;
     private String speak;
 
-    public Duck(String name, String speak) {
-        super(name, speak);
+    public Duck(String name, String speak, int width, int height, int weight, int appetite) {
+        super(name, speak, width, height, weight, appetite);
         this.speak = speak;
         this.name = name;
     }

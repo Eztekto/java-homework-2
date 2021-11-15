@@ -7,7 +7,7 @@ import main.java.food.Food;
 
 public class Worker {
 
-    public void feed(Food food, Animal animal) {
+    public void feed(Food food, Animal animal) throws BadFoodException {
         animal.eat(food);
 
     }
